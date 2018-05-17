@@ -1,7 +1,8 @@
-n = 3
-number_of_clauses = 0
-number_of_literals = 0
-clauses = []
+n = 3 #Number of rows/columns
+number_of_clauses = 0 #Total number of clauses
+number_of_literals = 0 #Total number of literals
+clauses = [] #List to maintain all the clauses
+
 #Generate clauses to make sure that there is at least one number in each place
 def atleast_one():
     global number_of_clauses
@@ -17,6 +18,7 @@ def atleast_one():
             clause=""
             number_of_clauses+=1
 
+#Generate clauses to make sure that no number is repeated in a row
 def no_repeat_rows():
     global number_of_clauses
     global number_of_literals
@@ -31,6 +33,7 @@ def no_repeat_rows():
                     number_of_clauses+=1
                     clause = ""
 
+#generate clauses to make sure that no number is repeated in a column
 def no_repeat_cols():
     global number_of_clauses
     global number_of_literals
