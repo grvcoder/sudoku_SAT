@@ -52,7 +52,7 @@ def main():
     atleast_one()
     no_repeat_rows()
     no_repeat_cols()
-    print "p" + " cnf"+" "+str(27)+" "+str(number_of_clauses)
+    print "p" + " cnf"+" "+str(n)+str(n)+str(n)+" "+str(number_of_clauses)
     for clause in clauses:
         print clause
 main()
