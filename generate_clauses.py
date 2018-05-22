@@ -65,6 +65,7 @@ def no_repeat_blocks():
                                     continue
                                 clause += "-"+str(row)+str(col)+str(value)+" -"+str(i)+str(j)+str(value)+" "+str(0)
 				number_of_literals+=2
+                                number_of_clauses+=1
                                 clauses.append(clause)
 				clause = ""
 
