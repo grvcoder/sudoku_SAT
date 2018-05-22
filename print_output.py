@@ -1,6 +1,6 @@
 import sys
 def main():
-    n = 3 
+    n = 9 
     row_count=n;
     
     file = open(sys.argv[1], "r")
